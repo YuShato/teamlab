@@ -1,0 +1,74 @@
+/* default btn (blue) */
+.default-btn {
+  background-color: var(--accent_blue);
+}
+
+.default-btn:hover,
+.default-btn:focus {
+  background: #34aff9;
+  box-shadow: 0px 8px 16px rgba(52, 175, 249, 0.2);
+}
+
+.default-btn:active {
+  background: #098edf;
+  box-shadow: 0px 2px 6px rgba(9, 142, 223, 0.3);
+}
+
+.default-btn:disabled,
+.default-btn[disabled] {
+  background-color: var(--icon_gray);
+}
+
+/* yellow btn */
+.default-btn--yellow {
+  background-color: var(--yellow);
+}
+
+.default-btn--yellow:hover,
+.default-btn--yellow:focus {
+  background-color: #f1b95d;
+}
+
+.default-btn--yellow:active {
+  background-color: #c99034;
+}
+
+/* red btn */
+.default-btn--red {
+  background-color: var(--red);
+}
+
+.default-btn--red:hover,
+.default-btn--red:focus {
+  background-color: var(--status_mistake_1);
+}
+
+.default-btn--red:active {
+  background-color: var(--status_mistake);
+}
+/* green btn */
+.default-btn--green {
+  background-color: var(--green);
+}
+
+.default-btn--green:hover,
+.default-btn--green:focus {
+  background-color: var(--status_done);
+}
+
+.default-btn--green:active {
+  background-color: #219656;
+}
+/* gray btn */
+.default-btn--gray {
+  background-color: var(--icon_gray);
+}
+
+.default-btn--gray:hover,
+.default-btn--gray:focus {
+  background-color: var(--table_gray);
+}
+
+.default-btn--gray:active {
+  background-color: var(--gray);
+}
