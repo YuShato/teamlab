@@ -1,5 +1,7 @@
 /* imports */
 @import url(./fonts.css);
+/* global styles */
+@import url(./global-styles.css);
 
 
 /* main colors and styles */
@@ -13,8 +15,8 @@
   /* gray */
   --dark_gray_text: #4c5862;
   --gray: #90a0b7;
-  --gray1: #333333;
-  --gray3: #828282;
+  --gray_1: #333333;
+  --gray_3: #828282;
   --icon_gray: #c2cfe0;
   --profile_gray: #4C5862;
   --table_gray: #707683;
@@ -42,10 +44,11 @@
 
 
   /* shadows */
-  --shadow1: box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
-  --radius-4: border-radius: 4px;
-  --radius-5: border-radius: 5px;
-  --radius-6: border-radius: 6px;
+  --shadow_1: box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  --shadow_btn: box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+  --radius_4: border-radius: 4px;
+  --radius_5: border-radius: 5px;
+  --radius_6: border-radius: 6px;
 
   /* borders */
   --dashed: border: 1px dashed #7B61FF;
