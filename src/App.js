@@ -1,13 +1,11 @@
 import "./App.css";
-import DefaultBtn from "./UI-library/buttons/DefaultBtn";
 import AllListUserActivities from "./consts/allUserActivities";
+import BtnWrapper from "./UI-library/wrappers/BtnWrapper";
 
 function App() {
   return (
     <div className="App">
-      {AllListUserActivities.map((btnItem, index) => (
-        <DefaultBtn key={index} data={btnItem} />
-      ))}
+      <BtnWrapper btnsArray={AllListUserActivities} />
     </div>
   );
 }
