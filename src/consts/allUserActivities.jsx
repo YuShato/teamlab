@@ -1,3 +1,11 @@
+import {
+  BiPlusCircle,
+  BiEditAlt,
+  BiEnvelope,
+  BiLineChart,
+  BiChevronDown,
+} from "react-icons/bi";
+
 const AllListUserActivities = [
   {
     icon: <BiPlusCircle />,
