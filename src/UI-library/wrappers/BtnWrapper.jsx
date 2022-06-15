@@ -6,7 +6,7 @@ const BtnWrapper = ({ btnsArray }) => {
   return (
     <BtnList>
       {btnsArray.map((btnItem, index) => (
-        <li>
+        <li key={index}>
           <DefaultBtn key={index} data={btnItem} />
         </li>
       ))}

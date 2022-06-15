@@ -36,7 +36,7 @@
   --status_done: #86C96F;
  
   /* yellow */
-  --status_warnig_1: #FFA360;
+  --status_warning_1: #FFA360;
   --yellow: #ffb946;
 
   /* other */
@@ -75,4 +75,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
+}
+
+button {
+  cursor: pointer;
 }
