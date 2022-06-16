@@ -1,5 +1,6 @@
 import "./App.css";
 import AllListUserActivities from "./consts/allUserActivities";
+import Navigation from "./UI-library/menu/Navigation";
 import MessageItem from "./UI-library/messages/MessageItem";
 import BtnWrapper from "./UI-library/wrappers/BtnWrapper";
 
@@ -29,12 +30,12 @@ const messagesMockArray = [
     text: "Нет интернет соединения",
     action: null,
   },
-
 ];
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
       <BtnWrapper btnsArray={AllListUserActivities} />
       <MessageItem message={message} />
     </div>
