@@ -1,24 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const DefaultBtn = ({ data }) => {
-  return (
-    <DefaultBtnWrap
-      className={`${
-        data.color === "default"
-          ? "default-btn"
-          : `default-btn default-btn--${data.color}`
-      }`}
-      aria-label={data.text}
-      onClick={data.onClick}
-    >
-      {data.icon}
-      {data.text}
-    </DefaultBtnWrap>
-  );
-};
-
-const DefaultBtnWrap = styled.button`
+export const DefaultBtnWrap = styled.button`
   display: flex;
   gap: 10px;
   min-width: 120px;
@@ -42,5 +24,3 @@ const DefaultBtnWrap = styled.button`
     height: 20px;
   }
 `;
-
-export default DefaultBtn;

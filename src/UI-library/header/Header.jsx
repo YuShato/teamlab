@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Search from './search'
+import Search from './Search'
 
 const Header = () => {
   return (

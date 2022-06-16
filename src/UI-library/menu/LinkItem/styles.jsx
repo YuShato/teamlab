@@ -1,21 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const LinkItem = ({ linkInfo }) => {
-  return (
-    <LinkItemWrapper
-      to={linkInfo.path}
-      aria-label={linkInfo.name}
-      className={linkInfo.isActive ? "active" : ""}
-    >
-      {linkInfo.icon}
-      {linkInfo.name}
-    </LinkItemWrapper>
-  );
-};
-
-const LinkItemWrapper = styled(Link)`
+export const LinkItemWrapper = styled(Link)`
   background-image: linear-gradient(
     to right,
     #54b3d6,
@@ -61,11 +47,11 @@ const LinkItemWrapper = styled(Link)`
 
   &:active {
     background-image: linear-gradient(
-    to right,
-    #54b3d6,
-    #c054d6 50%,
-    #3e0f30 50%
-  );
+      to right,
+      #54b3d6,
+      #c054d6 50%,
+      #3e0f30 50%
+    );
   }
 
   &:hover,
@@ -86,5 +72,3 @@ const LinkItemWrapper = styled(Link)`
     fill: #54b3d6;
   }
 `;
-
-export default LinkItem;

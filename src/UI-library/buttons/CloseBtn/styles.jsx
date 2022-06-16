@@ -1,18 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const CloseBtn = () => {
-  return (
-    <CloseBtnWrapper onClick={() => console.log("закрыть")}>
-      <div className="close-container">
-        <div className="leftright"></div>
-        <div className="rightleft"></div>
-      </div>
-    </CloseBtnWrapper>
-  );
-};
-
-const CloseBtnWrapper = styled.button`
+export const CloseBtnWrapper = styled.button`
   background-color: inherit;
   border: none;
 
@@ -63,5 +51,3 @@ const CloseBtnWrapper = styled.button`
     background-color: #2690e0;
   }
 `;
-
-export default CloseBtn;
