@@ -1,28 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Paths } from "../../consts/paths";
 
-const Logo = () => {
-  return (
-    <Link to={Paths.main}>
-      <LogoContainer id="container">
-        <div class="this">
-          <div class="perspective">
-            <div class="sq"></div>
-            <div class="s1"></div>
-            <div class="s2"></div>
-            <div class="s3"></div>
-            <div class="s4"></div>
-          </div>
-          <div class="text">Softee</div>
-        </div>
-      </LogoContainer>
-    </Link>
-  );
-};
-
-const LogoContainer = styled.div`
+export const LogoContainer = styled.div`
   grid-area: logo;
   .this {
     width: 80px;
@@ -217,5 +195,3 @@ const LogoContainer = styled.div`
     transition: all 500ms linear 500ms;
   }
 `;
-
-export default Logo;

@@ -38,7 +38,11 @@ const Container = styled.div`
 
 const Main = styled.main`
   grid-area: main;
-  background-color: #F5F6F8;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: #f5f6f8;
 `;
 
 export default App;

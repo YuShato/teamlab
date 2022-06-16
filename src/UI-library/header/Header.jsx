@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import Search from './search'
 
 const Header = () => {
   return (
-    <HeaderWrapper>Header</HeaderWrapper>
+    <HeaderWrapper>
+        <Search/>
+    </HeaderWrapper>
   )
 }
 
