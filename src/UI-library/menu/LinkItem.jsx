@@ -32,6 +32,8 @@ const LinkItemWrapper = styled(Link)`
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 
   & svg {
     width: 20px;
@@ -49,11 +51,21 @@ const LinkItemWrapper = styled(Link)`
     background: #54b3d6;
     display: block;
     position: absolute;
-    bottom: -3px;
+    bottom: -2px;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+  }
+
+  &:active {
+    background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #c054d6 50%,
+    #3e0f30 50%
+  );
   }
 
   &:hover,
@@ -67,7 +79,7 @@ const LinkItemWrapper = styled(Link)`
 
   &:hover::before,
   &.active::before {
-    width: 150px;
+    width: 140px;
   }
 
   &.active svg {
