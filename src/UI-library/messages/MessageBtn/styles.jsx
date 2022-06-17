@@ -1,13 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Paths } from "../../../consts/paths";
 
-const MessageBtn = ({ text }) => {
-  return <MessageBtnWrapper to={Paths.abonement}>{text}</MessageBtnWrapper>;
-};
-
-const MessageBtnWrapper = styled(Link)`
+export const MessageBtnWrapper = styled(Link)`
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -31,5 +25,3 @@ const MessageBtnWrapper = styled(Link)`
     background-color: #fe8c00;
   }
 `;
-
-export default MessageBtn;
