@@ -8,7 +8,7 @@ export const Container = styled.div`
   height: 35px;
   box-sizing: border-box;
   border-radius: 50px;
-  border: 2px solid #54b3d6;
+  border: 1px solid var(--accent_blue);
   padding: 5px;
   background: transparent;
   transition: all 0.5s;
@@ -24,7 +24,7 @@ export const Container = styled.div`
       width: 200px;
       -webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.24);
       box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.24);
-      border: 2px solid #54b3d6;
+      border: 1px solid var(--accent_blue);
 
       @media (min-width: 768px) {
         width: 350px;
@@ -66,7 +66,7 @@ const fadeIn = keyframes`
 const IconCommonCss = css`
   height: 20px;
   width: 20px;
-  fill: #54b3d6;
+  fill: var(--accent_blue);
   z-index: 10;
   animation: ${fadeIn} 1s linear;
 `;

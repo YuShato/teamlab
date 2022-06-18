@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DropDown = styled.div`
-  margin: 0 auto;
+  margin: 0 20px;
   z-index: 10000;
   width: 250px;
   position: relative;
