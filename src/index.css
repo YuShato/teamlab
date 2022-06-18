@@ -52,6 +52,11 @@
 
   /* borders */
   --dashed: border: 1px dashed #7B61FF;
+
+  /* loader */
+  --hue: 188;
+  --radius: 2.75;
+  --size: 2;
 }
 
 /*  

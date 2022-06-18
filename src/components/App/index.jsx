@@ -4,6 +4,7 @@ import Navigation from "../../UI-library/menu/Navigation";
 import MessageItem from "../../UI-library/messages/MessageItem";
 import BtnWrapper from "../../UI-library/wrappers/BtnWrapper";
 import Header from "../../UI-library/header/Header";
+import Loading from "../../UI-library/Loading";
 
 const mockMessage = {
   text: "Абонемент заканчивается 13.06.2026. Через 3 дня Вы не сможете записаться на занятие",
@@ -18,11 +19,10 @@ function App() {
       <Main>
         <BtnWrapper btnsArray={AllListUserActivities} />
         <MessageItem message={mockMessage} />
+        <Loading />
       </Main>
     </Container>
   );
 }
-
-
 
 export default App;
