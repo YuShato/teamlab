@@ -4,9 +4,6 @@ import {
   FormWrapper,
   LoginTitle,
   FormInput,
-  FormButton,
-  LoginName,
-  FormMessage,
   Form,
 } from "./styles";
 import useAuth from "../../hooks/useAuth";
@@ -16,6 +13,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import validationSchema from "./validation";
 import { ShowPasswordBtn } from "../../UI-library/buttons/ShowPassword/styles";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import FormBtn from "../../UI-library/forms/FormBtn";
+import FormMessage from "../../UI-library/forms/FormMessage";
 
 const LoginPage = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -51,7 +50,7 @@ const LoginPage = () => {
       setIsLoading(false);
     }
   };
-  
+
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
@@ -97,12 +96,8 @@ const LoginPage = () => {
           >
             {passwordShown ? <FaEyeSlash /> : <FaEye />}
           </ShowPasswordBtn>
-          <FormButton className="loginButton" type="submit">
-            <LoginName>Войти</LoginName>
-          </FormButton>
-          <FormMessage>
-            Забыли пароль? <a href="#">Восстановить пароль</a>
-          </FormMessage>
+          <FormBtn />
+          <FormMessage />
         </Form>
       </FormWrapper>
     </LoginPageWrapper>
