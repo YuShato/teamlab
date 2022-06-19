@@ -3,6 +3,7 @@ import useAuth from "../../../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 import { GrLogout } from "react-icons/gr";
 import { LogoutBtnWrapper } from "./styles";
+import { Paths } from "../../../consts/paths";
 
 const LogOut = () => {
   const auth = useAuth();
@@ -10,7 +11,7 @@ const LogOut = () => {
 
   const onLogOut = () => {
     auth.logOut();
-    navigate("/login");
+    navigate(Paths.login);
   };
 
   return (
