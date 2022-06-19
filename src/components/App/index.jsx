@@ -1,28 +1,30 @@
-import { Container, Main } from "./styles";
-import AllListUserActivities from "../../consts/allUserActivities";
-import Navigation from "../../UI-library/menu/Navigation";
-import MessageItem from "../../UI-library/messages/MessageItem";
-import BtnWrapper from "../../UI-library/wrappers/BtnWrapper";
-import Header from "../../UI-library/header/Header";
-import Loading from "../../UI-library/Loading";
+import Routes from "../../routes/Routes";
+import useAuth from "../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
+import { Paths } from "../../consts/paths";
+import HomePage from "../../pages/Home";
+import LoginPage from "../../pages/Login";
 
-const mockMessage = {
-  text: "Абонемент заканчивается 13.06.2026. Через 3 дня Вы не сможете записаться на занятие",
-  action: "Продлить",
-};
+const App = () => {
+  const auth = useAuth();
+  const navigate = useNavigate();
 
-function App() {
+  const onLogOut = () => {
+    auth.logOut();
+    navigate(Paths.login);
+  };
+  console.log(`
+    email: user@example.com
+    password: userpassword$
+  `);
+  console.log(auth);
+
   return (
-    <Container>
-      <Navigation />
-      <Header />
-      <Main>
-        <BtnWrapper btnsArray={AllListUserActivities} />
-        <MessageItem message={mockMessage} />
-        <Loading />
-      </Main>
-    </Container>
+    <div>
+      {auth.isLoaded && (auth.user ? <HomePage /> : <LoginPage />)}
+      <Routes />
+    </div>
   );
-}
+};
 
 export default App;

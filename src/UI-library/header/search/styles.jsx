@@ -27,7 +27,7 @@ export const Container = styled.div`
       border: 1px solid var(--accent_blue);
 
       @media (min-width: 768px) {
-        width: 350px;
+        width: 250px;
       }
     `}
 `;

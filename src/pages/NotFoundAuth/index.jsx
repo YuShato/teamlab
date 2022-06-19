@@ -14,7 +14,7 @@ import Navigation from "../../UI-library/menu/Navigation";
 import Header from "../../UI-library/header/Header";
 import { Container } from "../../components/App/styles";
 
-const NotFound = () => {
+const NotFoundAuth = () => {
   return (
     <Container>
       <Navigation />
@@ -38,4 +38,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundAuth;

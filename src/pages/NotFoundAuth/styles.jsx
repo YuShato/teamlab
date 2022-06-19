@@ -5,32 +5,30 @@ export const NotFoundContainer = styled.main`
 `;
 
 export const MainBox = styled.div`
-  background-color: #95c2de;
   margin: auto;
   height: 100vh;
   width: 600px;
   position: relative;
+  color: var(--white);
+  font-size: 180px;
 `;
 
 export const Error = styled.div`
-  color: #ffffff;
-  font-size: 11rem;
   position: absolute;
   left: 20%;
   top: 8%;
 `;
 
 export const Error2 = styled.div`
-  color: #ffffff;
-  font-size: 11rem;
   position: absolute;
   left: 68%;
   top: 8%;
 `;
 
 export const Message = styled.div`
+  color: var(--dark_blue);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 24px;
   position: absolute;
   left: 16%;
   top: 45%;
@@ -38,7 +36,8 @@ export const Message = styled.div`
 
   a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
+    font-weight: 600;
   }
 
   a:hover {
@@ -47,8 +46,8 @@ export const Message = styled.div`
 `;
 
 export const Question = styled.div`
-  width: 11rem;
-  height: 11rem;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 15px solid white;
   position: absolute;
@@ -56,8 +55,9 @@ export const Question = styled.div`
   left: 38%;
 
   svg {
-    width: 140px;
-    height: 140px;
+    position: absolute;
+    width: 160px;
+    height: 160px;
     fill: white;
     animation-name: rotate-center;
     animation-duration: 3.2s;

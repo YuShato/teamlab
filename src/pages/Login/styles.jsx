@@ -67,6 +67,7 @@ export const LoginTitle = styled.h2`
 `;
 
 export const FormInput = styled.input`
+  position: relative;
   font-family: inherit;
   letter-spacing: 1px;
   outline: 0;
