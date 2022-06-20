@@ -3,7 +3,7 @@ import { FormButton, LoginName } from "./styles";
 
 const FormBtn = () => {
   return (
-    <FormButton className="loginButton" type="submit">
+    <FormButton  type="submit">
       <LoginName>Войти</LoginName>
     </FormButton>
   );

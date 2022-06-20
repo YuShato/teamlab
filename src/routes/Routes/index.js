@@ -9,13 +9,21 @@ import LoginPage from "../../pages/Login";
 import Loading from "../../UI-library/Loading";
 import NotFoundAuth from "../../pages/NotFoundAuth";
 import Profile from "../../pages/Profile";
+import ForgotPassword from "../../pages/ForgotPassword";
 
 const AppRoutes = () => {
   const auth = useAuth();
 
   return auth.isLoaded ? (
     <Routes>
-      <Route path={Paths.main} element={<HomePage />} />
+      <Route
+        path={Paths.main}
+        element={
+          <PrivateRoute>
+            <HomePage />
+          </PrivateRoute>
+        }
+      />
       <Route
         path={Paths.profile}
         element={
@@ -29,6 +37,14 @@ const AppRoutes = () => {
         element={
           <GuestRoute>
             <LoginPage />
+          </GuestRoute>
+        }
+      />
+      <Route
+        path={Paths.forgotPassword}
+        element={
+          <GuestRoute>
+            <ForgotPassword />
           </GuestRoute>
         }
       />

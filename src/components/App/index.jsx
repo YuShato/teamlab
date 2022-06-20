@@ -6,17 +6,13 @@ import LoginPage from "../../pages/Login";
 const App = () => {
   const auth = useAuth();
 
-  console.log(`
-    email: user@example.com
-    password: userpassword$
-  `);
   console.log(auth);
 
   return (
-    <div>
+    <><Routes>
       {auth.isLoaded && (auth.user ? <HomePage /> : <LoginPage />)}
-      <Routes />
-    </div>
+      </Routes>
+    </>
   );
 };
 

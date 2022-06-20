@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
   grid-area: head;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: start;
+  grid-template-columns: 300px 1fr 200px 100px;
   background-color: var(--white);
-  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+  padding-left: 20px;
+  padding-right: 20px;
 `;

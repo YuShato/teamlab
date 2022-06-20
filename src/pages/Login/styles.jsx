@@ -64,6 +64,8 @@ export const LoginTitle = styled.h2`
   margin-bottom: 26px;
   font-weight: 700;
   margin-top: 0;
+  color: var(--dark_blue);
+  letter-spacing: 2px;
 `;
 
 export const FormInput = styled.input`
@@ -80,13 +82,15 @@ export const FormInput = styled.input`
   font-size: 16px;
   border-radius: 5px;
   padding-left: 18px;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  color: var(--dark_blue);
 
   &::placeholder {
     letter-spacing: 1px;
+    color: var(--dark_blue);
   }
 
   &:focus {

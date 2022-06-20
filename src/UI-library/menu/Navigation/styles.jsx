@@ -8,7 +8,7 @@ export const NavWrapper = styled.nav`
   grid-template-rows: 80px 1fr;
   width: 250px;
   background-color: var(--white);
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 6px 2px 15px 5px rgba(91,172,255,0.38);
 `;
 
 export const MenuContainer = styled.div`

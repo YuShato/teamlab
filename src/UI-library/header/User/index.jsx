@@ -16,7 +16,7 @@ const User = () => {
           ) : (
             <DefaultAvatar />
           )}
-          <Link to={Paths.profile}>
+          <Link to={Paths.profile} title="Посмотреть профиль">
             
               <UserName>
                 {auth.user.firstName} {auth.user.lastName}

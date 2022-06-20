@@ -9,17 +9,14 @@ export const LogoutBtnWrapper = styled.button`
   border-radius: 50%;
 
   svg {
-    width: 20px;
-    height: 20px;
-
-    & path {
-      stroke: var(--accent_blue);
-    }
+    width: 24px;
+    height: 24px;
+    fill: var(--icon_gray);
   }
 
   &:hover {
     svg {
-      fill: var(--dark_blue);
+      fill: var(--accent_blue);
     }
   }
 `;
