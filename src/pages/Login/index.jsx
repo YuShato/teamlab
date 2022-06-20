@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  FormWrapper,
-  LoginTitle,
-  FormInput,
-  Form,
-} from "./styles";
+import { FormWrapper, LoginTitle, FormInput, Form } from "./styles";
 import useAuth from "../../hooks/useAuth";
 import api from "../../services/api";
 import { useForm, Controller } from "react-hook-form";
