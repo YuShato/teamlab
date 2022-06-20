@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  LoginPageWrapper,
   FormWrapper,
   LoginTitle,
   FormInput,
@@ -17,6 +16,7 @@ import { FormButton, LoginName } from "../../UI-library/forms/FormBtn/styles";
 import { FormMessageWrapper } from "../../UI-library/forms/FormMessage/styles";
 import { Paths } from "../../consts/paths";
 import { Link } from "react-router-dom";
+import AnimatedBackground from "../../UI-library/background/AnimatedBackground";
 
 const ForgotPassword = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -54,7 +54,7 @@ const ForgotPassword = () => {
   };
 
   return (
-    <LoginPageWrapper>
+    <AnimatedBackground>
       <FormWrapper>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <LoginTitle>Вход</LoginTitle>
@@ -87,7 +87,7 @@ const ForgotPassword = () => {
           </FormMessageWrapper>
         </Form>
       </FormWrapper>
-    </LoginPageWrapper>
+    </AnimatedBackground>
   );
 };
 

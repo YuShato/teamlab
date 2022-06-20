@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  LoginPageWrapper,
   FormWrapper,
   LoginTitle,
   FormInput,
@@ -15,6 +14,7 @@ import { ShowPasswordBtn } from "../../UI-library/buttons/ShowPassword/styles";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import FormBtn from "../../UI-library/forms/FormBtn";
 import FormMessage from "../../UI-library/forms/FormMessage";
+import AnimatedBackground from "../../UI-library/background/AnimatedBackground";
 
 const LoginPage = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -56,7 +56,7 @@ const LoginPage = () => {
   };
 
   return (
-    <LoginPageWrapper>
+    <AnimatedBackground>
       <FormWrapper>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <LoginTitle>Вход</LoginTitle>
@@ -100,7 +100,7 @@ const LoginPage = () => {
           <FormMessage />
         </Form>
       </FormWrapper>
-    </LoginPageWrapper>
+    </AnimatedBackground>
   );
 };
 
