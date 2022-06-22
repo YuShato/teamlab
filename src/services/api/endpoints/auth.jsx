@@ -6,6 +6,7 @@ const endpoints = {
   forgotPassword: (data) => axios.post("/v1/auth/forgot/password", data),
   getProfile: () => axios.get("/v1/auth/me"),
   updateProfile: (data) => axios.patch("/v1/auth/me", data),
+  uploadFile: (data) => axios.post("/api/v1/files/upload", data),
 };
 
 export default endpoints;

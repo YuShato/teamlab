@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const DefaultAvatarWrapper = styled.div`
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -8,10 +9,9 @@ export const DefaultAvatarWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
 
   svg {
-    width: 30px;
-    height: 30px;
     fill: var(--accent_blue);
   }
 `;

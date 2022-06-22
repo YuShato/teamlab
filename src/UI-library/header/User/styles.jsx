@@ -8,12 +8,13 @@ export const UserWrapper = styled.div`
   flex-wrap: wrap;
   max-width: 200px;
   justify-content: flex-end;
+  position: relative;
 
   img {
     background-color: gray;
     border-radius: 50%;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
   }
 
   a {

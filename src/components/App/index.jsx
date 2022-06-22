@@ -9,8 +9,9 @@ const App = () => {
   console.log(auth);
 
   return (
-    <><Routes>
-      {auth.isLoaded && (auth.user ? <HomePage /> : <LoginPage />)}
+    <>
+      <Routes>
+        {auth.isLoaded && (auth.user ? <HomePage /> : <LoginPage />)}
       </Routes>
     </>
   );
