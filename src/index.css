@@ -1,6 +1,5 @@
 /* imports */
-@import url(./fonts.css);
-
+@import url(./fonts/fonts.css);
 
 /* main colors and styles */
 :root {
@@ -16,39 +15,38 @@
   --gray1: #333333;
   --gray3: #828282;
   --icon_gray: #c2cfe0;
-  --profile_gray: #4C5862;
+  --profile_gray: #4c5862;
   --table_gray: #707683;
-  --divider: #EBEFF2;
+  --divider: #ebeff2;
 
   /* blue */
   --accent_blue: #109cf1;
-  --dark_blue: #334D6E;
+  --dark_blue: #334d6e;
 
   /* red */
   --red: #f7685b;
-  --status_mistake: #FF2222;
-  --status_mistake_1: #FC7373;
+  --status_mistake: #ff2222;
+  --status_mistake_1: #fc7373;
 
   /* green */
   --green: #2ed47a;
-  --status_done: #86C96F;
- 
+  --status_done: #86c96f;
+
   /* yellow */
-  --status_warnig_1: #FFA360;
+  --status_warnig_1: #ffa360;
   --yellow: #ffb946;
 
   /* other */
-  --purple: #885AF8;
-
+  --purple: #885af8;
 
   /* shadows */
-  --shadow1: box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
-  --radius-4: border-radius: 4px;
-  --radius-5: border-radius: 5px;
-  --radius-6: border-radius: 6px;
+  --shadow1: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  --radius-4: 4px;
+  --radius-5: 5px;
+  --radius-6: 6px;
 
   /* borders */
-  --dashed: border: 1px dashed #7B61FF;
+  --dashed: 1px dashed #7b61ff;
 }
 
 /*  
@@ -67,8 +65,7 @@ Global Styles
 
 body {
   margin: 0;
-  font-family: "Raleway", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Raleway", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
