@@ -7,9 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "lint": "eslint --fix . --ext .js,.jsx",
-    "check": "npm-check",
-    "check-update": "npm-check -u -E"
+    "lint": "eslint --fix . --ext .js,.jsx"
   },
   "dependencies": {
     "react": "18.0.0",
@@ -24,7 +22,6 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "5.2.0",
     "eslint-plugin-react": "7.29.4",
-    "npm-check": "5.9.2",
     "prettier": "2.6.2",
     "vite": "2.9.5"
   }
