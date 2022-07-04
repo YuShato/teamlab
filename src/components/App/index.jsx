@@ -13,7 +13,7 @@ const App = () => {
 
 const Test1 = styled.div`
   grid-area: head;
-  background: red;
+  background: blue;
 `;
 const Test2 = styled.div`
   grid-area: nav;

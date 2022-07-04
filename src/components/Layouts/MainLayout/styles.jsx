@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "../../../utils/device";
 
 export const Container = styled.div`
   display: grid;
@@ -13,12 +12,12 @@ export const Container = styled.div`
   height: 100vh;
   margin: 0;
 
-  @media ${device.mediumScreen} {
+  @media (min-device-width: 768px) and (max-device-width: 1024px){
     grid-template-rows: 60px 1fr;
     grid-template-columns: minmax(60px, 200px) 1fr;
   }
 
-  @media ${device.smallScreen} {
+  @media (min-device-width: 425px) and (max-device-width: 768px) {
     grid-template-areas:
       "head"
       "nav"
@@ -29,7 +28,7 @@ export const Container = styled.div`
     height: auto;
   }
 
-  @media ${device.extraSmallScreen} {
+  @media (min-device-width: 320px) and (max-device-width: 425px)  {
     grid-template-areas:
       "head"
       "nav"
