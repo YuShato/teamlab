@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import {
+    WidthWrapper,
     Container,
     SearchInput,
     IconRightArrow,
@@ -17,16 +18,18 @@ const Search = () => {
     }, [ showSearchInput ]);
 
     return (
-        <Container
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
-            hover={showSearchInput}
-        >
-            <SearchInput ref={targetRef} showSearchInput={showSearchInput} />
-            {showSearchInput ? <IconRightArrow /> : <IconMagnifyingGlass />}
-        </Container>
+        <WidthWrapper>
+            <Container
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setIsFocused(false)}
+                hover={showSearchInput}
+            >
+                <SearchInput ref={targetRef} showSearchInput={showSearchInput} />
+                {showSearchInput ? <IconRightArrow /> : <IconMagnifyingGlass />}
+            </Container>
+        </WidthWrapper>
     );
 };
 

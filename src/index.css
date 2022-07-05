@@ -1,82 +1,87 @@
-html {
-  font-weight: 400;
-  scroll-behavior: smooth;
+/* imports */
+@import url(./styles/fonts.scss);
+/* global styles */
+@import url(./styles/global-styles.scss);
+
+
+/* main colors and styles */
+:root {
+  /* white */
+  --white: #ffffff;
+
+  /* black */
+  --table_black: #323c47;
+
+  /* gray */
+  --dark_gray_text: #4c5862;
+  --gray: #90a0b7;
+  --gray_1: #333333;
+  --gray_3: #828282;
+  --icon_gray: #c2cfe0;
+  --profile_gray: #4C5862;
+  --table_gray: #707683;
+  --divider: #EBEFF2;
+
+  /* blue */
+  --accent_blue: #109cf1;
+  --dark_blue: #334D6E;
+
+  /* red */
+  --red: #f7685b;
+  --status_mistake: #FF2222;
+  --status_mistake_1: #FC7373;
+
+  /* green */
+  --green: #2ed47a;
+  --status_done: #86C96F;
+ 
+  /* yellow */
+  --status_warning_1: #FFA360;
+  --yellow: #ffb946;
+
+  /* other */
+  --purple: #885AF8;
+
+
+  /* shadows */
+  --shadow_1: box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  --shadow_btn: box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+  --radius_4: border-radius: 4px;
+  --radius_5: border-radius: 5px;
+  --radius_6: border-radius: 6px;
+
+  /* borders */
+  --dashed: border: 1px dashed #7B61FF;
+
+  /* loader */
+  --hue: 188;
+  --radius: 2.75;
+  --size: 2;
 }
 
-body {
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  scroll-behavior: smooth;
-}
+/*  
+=============== 
+Global Styles
+===============
+*/
 
 *,
-*::before,
-*::after {
+::after,
+::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
-  list-style: none;
-  padding: 0;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+body {
   margin: 0;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  text-decoration: none;
-}
-
-a,
-button {
-  transition: 0.2s;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-textarea {
-  resize: none;
+  font-family: "Raleway", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
 }
 
 button {
-  background-color: transparent;
-  border: 0;
   cursor: pointer;
-  outline: none;
 }

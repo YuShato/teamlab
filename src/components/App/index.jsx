@@ -1,20 +1,17 @@
 import styled from "styled-components";
+import Header from "../Header";
 import MainLayout from "../Layouts/MainLayout";
 
 const App = () => {
   return (
     <MainLayout>
-      <Test1>header</Test1>
+      <Header/>
       <Test2>nav</Test2>
       <Test3>main</Test3>
     </MainLayout>
   );
 };
 
-const Test1 = styled.div`
-  grid-area: head;
-  background: blue;
-`;
 const Test2 = styled.div`
   grid-area: nav;
   background: yellow;

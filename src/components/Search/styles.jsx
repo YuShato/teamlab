@@ -1,6 +1,11 @@
 import styled, { css, keyframes } from "styled-components";
-import SearchIcon from "../../icons/search";
-import ArrowRightIcon from "../../icons/arrowRight";
+import SearchIcon from "../SearchIcon";
+import ArrowRightIcon from "../ArrowRightIcon";
+
+export const WidthWrapper = styled.div`
+    width: 200px;
+    user-select: none;
+`;
 
 export const Container = styled.div`
   position: relative;
