@@ -7,7 +7,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "lint": "eslint --fix . --ext .js,.jsx"
+    "lint": "eslint --fix . --ext .js,.jsx",
+    "docs": "jsdoc -c jsdoc.conf.json"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
@@ -18,6 +19,8 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "better-docs": "^1.2.2",
+    "jsdoc": "^3.6.10",
     "@vitejs/plugin-react": "1.3.1",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.5.0",
