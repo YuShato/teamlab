@@ -9,7 +9,7 @@ import {
 
 /**
  * Search component.
- *
+ * 
  * @type {React.FC<Props>}
  * @returns {React.ReactElement} Возвращает JSX-элемент строки поиска на сайте. Используется в компоненте Header
  */
