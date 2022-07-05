@@ -7,6 +7,13 @@ import {
     IconMagnifyingGlass,
 } from "./styles";
 
+/**
+ * Search component.
+ *
+ * @type {React.FC<Props>}
+ * @returns {React.ReactElement} Возвращает JSX-элемент строки поиска на сайте. Используется в компоненте Header
+ */
+
 const Search = () => {
     const targetRef = useRef(null);
     const [ isHovered, setIsHovered ] = useState(false);

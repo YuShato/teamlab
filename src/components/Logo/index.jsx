@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import { LogoContainer } from "./styles";
 import { Paths } from "../../../consts/paths";
 
+/**
+ * Logo component.
+ *
+ * @type {React.FC<Props>}
+ * @returns {React.ReactElement} Возвращает JSX-компонент анимированного логотипа.
+ */
+
 const Logo = () => {
     return (
         <Link to={Paths.main}>

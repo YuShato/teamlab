@@ -3,6 +3,21 @@ import { DropDown } from "./styles";
 import { BsFillCaretUpFill, BsFillCaretDownFill } from "react-icons/bs";
 import PropTypes from "prop-types";
 
+/**
+ * The DropDownList properties.
+ *
+ * @typedef {object} Props
+ * @property {Array} citiesListArray - Массив строк с городами.
+ * @example citiesListArray = [ "Пермь", "Томск","Москва" ];
+ */
+
+/**
+ * DropDownList component.
+ *
+ * @type {React.FC<Props>}
+ * @returns {React.ReactElement} Выпадающий список городов присутствия (в которых есть учебный центр).
+ */
+
 const DropDownList = ({ citiesListArray }) => {
     const [ isActive, setIsActive ] = useState(false);
     const [ selected, setIsSelected ] = useState("Выберите город");
@@ -10,7 +25,7 @@ const DropDownList = ({ citiesListArray }) => {
     return (
         <DropDown className="dropdown">
             <div
-                onClick={(e) => {
+                onClick={() => {
                     setIsActive(!isActive);
                 }}
                 className="dropdown-btn"

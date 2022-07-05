@@ -1,6 +1,20 @@
 import { BackgroundWrapper } from "./styles";
 import PropTypes from "prop-types";
 
+/**
+ * The AnimatedBackground properties.
+ *
+ * @typedef {object} Props
+ * @property {React.ReactElement} children - один или несколько JSX-компонентов.
+ */
+
+/**
+ * AnimatedBackground component.
+ *
+ * @type {React.FC<Props>}
+ * @returns {React.ReactElement} Возвращает анимированный фон для страницы входа.
+ */
+
 const AnimatedBackground = ({ children }) => {
   return (
     <BackgroundWrapper>
@@ -19,6 +33,7 @@ const AnimatedBackground = ({ children }) => {
 };
 
 AnimatedBackground.propTypes = {
+  /** children -  Внутренние JSX-компоненты для отображения на анимированном фоне */
   "children": PropTypes.element.isRequired,
 };
 

@@ -1,3 +1,10 @@
+/**
+ * ArrowRightIcon component.
+ *
+ * @type {React.FC<Props>}
+ * @returns {React.ReactElement} Возвращает JSX-компонент иконки (стрелка вправо).
+ */
+
 const ArrowRightIcon = (props) => (
     <svg
         aria-hidden="true"

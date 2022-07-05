@@ -1,5 +1,12 @@
 import { LoadingWrapper } from "./styles";
 
+/**
+ * Loading component.
+ *
+ * @type {React.FC<Props>}
+ * @returns {React.ReactElement} Возвращает JSX-компонент значка загрузки.
+ */
+
 const Loading = () => {
   return (
     <LoadingWrapper>

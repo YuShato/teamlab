@@ -2,6 +2,13 @@ import styled from "styled-components";
 import Header from "../Header";
 import MainLayout from "../Layouts/MainLayout";
 
+/**
+ * App component.
+ *
+ * @type {React.FC<Props>}
+ * @returns {React.ReactElement} Возвращает JSX-компонент приложения.
+ */
+
 const App = () => {
   return (
     <MainLayout>
