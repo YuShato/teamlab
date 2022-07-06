@@ -1,8 +1,12 @@
-import { mockCities } from '../../constants/mockCities';
 import DropDownList from '../DropDownList';
 import Search from '../Search';
+import User from '../User';
 import { HeaderWrapper } from './styles';
-
+// нижние импорты подгружают моковые данные.
+// Это временное решение на время, пока настраивается API
+import { mockCities } from '../../constants/mockData/mockCities';
+import { mockIsAuthLoaded } from '../../constants/mockData/mockIsAuthLoaded';
+import { mockUser } from '../../constants/mockData/mockUser';
 /**
  * Header component.
  *
@@ -15,6 +19,8 @@ const Header = () => {
         <HeaderWrapper>
             <DropDownList citiesListArray={mockCities} />
             <Search />
+            {/* когда добавится авторизация, сделать замену дефолтного аватара на аватар пользователя */}
+            <User isAuthLoaded={mockIsAuthLoaded} authUser={mockUser} />
         </HeaderWrapper>
     );
 };

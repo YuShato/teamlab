@@ -1,6 +1,5 @@
 import { DefaultAvatarWrapper } from "./styles";
 import { BiUser } from "react-icons/bi";
-import EditAvatar from "../EditAvatar";
 
 /**
  * DefaultAvatar component.
@@ -13,7 +12,9 @@ const DefaultAvatar = () => {
     return (
         <DefaultAvatarWrapper>
             <BiUser />
-            <EditAvatar className="edit" />
+            {/* добавить сюда компонент замены аватара на авaтар пользователя.
+             Компонент должен проверять, авторизован ли пользователь и при том что он авторизован и загрузил новый аватар,
+             данные должны отправляться на сервер и храниться там */}
         </DefaultAvatarWrapper>
     );
 };
