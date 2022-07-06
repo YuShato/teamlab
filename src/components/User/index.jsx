@@ -48,24 +48,23 @@ const User = ({ authUser, isAuthLoaded }) => {
 
 User.propTypes = {
     "isAuthLoaded": PropTypes.bool.isRequired,
-    "authUser": {
+    "authUser": PropTypes.shape({
         "email": PropTypes.string,
         "password": PropTypes.string,
         "firstName": PropTypes.string,
         "lastName": PropTypes.string,
-        "photo": {
+        "photo": PropTypes.shape({
             "id": PropTypes.string
-        },
-        "role": {
+        }),
+        "role": PropTypes.shape({
             "id": PropTypes.number,
             "name": PropTypes.string
-        },
-        "status": {
+        }),
+        "status": PropTypes.shape({
             "id": PropTypes.number,
             "name": PropTypes.string
-        }
-
-    }
+        })
+    })
 
 };
 

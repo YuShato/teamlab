@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { NavLinksData } from "../../constants/navLinksData";
 import Header from "../Header";
 import MainLayout from "../Layouts/MainLayout";
+import Navigation from "../Navigation";
 
 /**
  * App component.
@@ -12,17 +14,13 @@ import MainLayout from "../Layouts/MainLayout";
 const App = () => {
   return (
     <MainLayout>
-      <Header/>
-      <Test2>nav</Test2>
+      <Header />
+      <Navigation navLinksDataArray={NavLinksData} />
       <Test3>main</Test3>
     </MainLayout>
   );
 };
 
-const Test2 = styled.div`
-  grid-area: nav;
-  background: yellow;
-`;
 const Test3 = styled.div`
   grid-area: main;
   background: purple;

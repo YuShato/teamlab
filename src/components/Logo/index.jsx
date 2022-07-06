@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { LogoContainer } from "./styles";
-import { Paths } from "../../../consts/paths";
+import { Routes } from "../../constants/routes";
 
 /**
  * Logo component.
@@ -11,7 +11,7 @@ import { Paths } from "../../../consts/paths";
 
 const Logo = () => {
     return (
-        <Link to={Paths.main}>
+        <Link to={Routes.main}>
             <LogoContainer id="container">
                 <div className="this">
                     <div className="perspective">
