@@ -3,6 +3,8 @@ import { Routes } from "../../constants/routes";
 import { Link } from "react-router-dom";
 import DefaultAvatar from "../DefaultAvatar";
 import PropTypes from "prop-types";
+import InitialsAvatar from 'react-initials-avatar';
+import 'react-initials-avatar/lib/ReactInitialsAvatar.css';
 
 /**
  * The User properties.
@@ -20,14 +22,14 @@ import PropTypes from "prop-types";
  */
 
 const User = ({ authUser, isAuthLoaded }) => {
-
     return (
         <UserWrapper>
             {isAuthLoaded && authUser && (
                 <>
                     {authUser.photo ? (
                         <>
-                            <img className="user-avatar" src={authUser.photo.id} alt="аватар" width={46} height={46} />
+                            {/* <img className="user-avatar" src={authUser.photo.id} alt="аватар" width={46} height={46} /> */}
+                            <InitialsAvatar name={`${authUser.firstName} ${authUser.lastName}`}/>
                             {/* сюда добавить компонент, который будет позволять загружать новый аватар пользователя (EditAvatar) */}
                         </>
                     ) : (
@@ -49,6 +51,7 @@ const User = ({ authUser, isAuthLoaded }) => {
 User.propTypes = {
     "isAuthLoaded": PropTypes.bool.isRequired,
     "authUser": PropTypes.shape({
+        "name": PropTypes.string,
         "email": PropTypes.string,
         "password": PropTypes.string,
         "firstName": PropTypes.string,

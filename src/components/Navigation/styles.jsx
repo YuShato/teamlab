@@ -55,5 +55,6 @@ export const MenuContainer = styled.div`
   justify-items: flex-start;
   align-items: center;
   align-content: start;
+  margin-top: 30px;
 `;
 
