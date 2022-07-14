@@ -7,14 +7,13 @@ export const Container = styled.div`
     "nav main"
     "nav main";
   grid-template-rows: 60px 1fr;
-  grid-template-columns: minmax(60px, 250px) 1fr;
+  grid-template-columns: auto 1fr;
   width: 100vw;
   height: 100vh;
   margin: 0;
 
   @media (min-device-width: 768px) and (max-device-width: 1024px){
     grid-template-rows: 60px 1fr;
-    grid-template-columns: minmax(60px, 200px) 1fr;
   }
 
   @media (min-device-width: 425px) and (max-device-width: 768px) {

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { LogoContainer } from "./styles";
 import { Routes } from "../../constants/routes";
+import PropTypes from "prop-types";
 
 /**
  * Logo component.
@@ -9,10 +10,10 @@ import { Routes } from "../../constants/routes";
  * @returns {React.ReactElement} Возвращает JSX-компонент анимированного логотипа.
  */
 
-const Logo = () => {
+const Logo = ({ isHowNav = false }) => {
     return (
         <Link to={Routes.main}>
-            <LogoContainer id="container">
+            <LogoContainer id="container" isHowNav={isHowNav}>
                 <div className="this">
                     <div className="perspective">
                         <div className="sq"></div>
@@ -26,6 +27,10 @@ const Logo = () => {
             </LogoContainer>
         </Link>
     );
+};
+
+Logo.propTypes = {
+    "isHowNav": PropTypes.bool
 };
 
 export default Logo;

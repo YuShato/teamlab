@@ -15,6 +15,7 @@ export const LinkItemWrapper = styled(Link)`
   padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   font-weight: 500;
@@ -58,7 +59,8 @@ export const LinkItemWrapper = styled(Link)`
   }
   &:hover::before,
   &.active::before {
-    width: 140px;
+    width: ${(props) => (props.isTextShow ? "140px" : "20px")};
+    
   }
   &.active svg {
     fill: #54b3d6;

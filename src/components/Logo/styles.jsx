@@ -3,28 +3,32 @@ import styled from "styled-components";
 export const LogoContainer = styled.div`
   grid-area: logo;
   .this {
-    width: 80px;
-    height: 80px;
+    /* width: 80px;
+    height: 80px; */
+    width:  ${(props) => (props.isShowNav ? "80px" : "40px")};
+    height:  ${(props) => (props.isShowNav ? "80px" : "40px")};
     cursor: pointer;
     position: relative;
-    margin: 25px auto;
+    margin: ${(props) => (props.isShowNav ? "25px" : "12.5px")} auto;
   }
   .this .sq {
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
+    width:  ${(props) => (props.isShowNav ? "30px" : "15px")};
+    height:  ${(props) => (props.isShowNav ? "30px" : "15px")};
     background: #94c5ee;
     position: absolute;
-    left: 25px;
-    top: 25px;
+    left: ${(props) => (props.isShowNav ? "25px" : "12.5px")};
+    top: ${(props) => (props.isShowNav ? "25px" : "12.5px")};
   }
   .this .s1 {
     display: inline-block;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
+    border-left: ${(props) => (props.isShowNav ? "15px" : "7.5px")} solid transparent;
+    border-right: ${(props) => (props.isShowNav ? "15px" : "7.5px")} solid transparent;
     border-top: 0 solid transparent;
-    border-bottom: 25px solid #94c5ee;
+    border-bottom: ${(props) => (props.isShowNav ? "25px" : "12.5px")} solid #94c5ee;
     position: absolute;
-    left: 25px;
+    left: ${(props) => (props.isShowNav ? "25px" : "12.5px")};
     -webkit-transform: translateY(-5px);
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
@@ -42,9 +46,9 @@ export const LogoContainer = styled.div`
   }
   .this .s2 {
     display: inline-block;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 25px solid #94c5ee;
+    border-left: ${(props) => (props.isShowNav ? "15px" : "7.5px")} solid transparent;
+    border-right: ${(props) => (props.isShowNav ? "15px" : "7.5px")} solid transparent;
+    border-top: ${(props) => (props.isShowNav ? "25px" : "12.5px")} solid #94c5ee;
     border-bottom: 0 solid transparent;
     position: absolute;
     bottom: 0;
@@ -61,17 +65,17 @@ export const LogoContainer = styled.div`
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    left: 25px;
+    left: ${(props) => (props.isShowNav ? "25px" : "12.5px")};
   }
   .this .s3 {
     display: inline-block;
     border-left: 0 solid transparent;
-    border-right: 25px solid #94c5ee;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
+    border-right: ${(props) => (props.isShowNav ? "25px" : "12.5px")} solid #94c5ee;
+    border-top: ${(props) => (props.isShowNav ? "15px" : "7.5px")} solid transparent;
+    border-bottom: ${(props) => (props.isShowNav ? "15px" : "7.5px")} solid transparent;
     position: absolute;
     left: 0;
-    top: 25px;
+    top: ${(props) => (props.isShowNav ? "25px" : "12.5px")};
     -webkit-transform: translateX(-5px);
     -moz-transform: translateX(-5px);
     -ms-transform: translateX(-5px);
@@ -88,13 +92,13 @@ export const LogoContainer = styled.div`
   }
   .this .s4 {
     display: inline-block;
-    border-left: 25px solid #94c5ee;
+    border-left: ${(props) => (props.isShowNav ? "25px solid #94c5ee" : "12.5px solid #94c5ee")};
     border-right: 0 solid transparent;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
+    border-top: ${(props) => (props.isShowNav ? "15px solid transparent" : "7.5px solid transparent")};
+    border-bottom: ${(props) => (props.isShowNav ? "15px" : "7.5px")} solid transparent;
     position: absolute;
     right: 0;
-    top: 25px;
+    top: ${(props) => (props.isShowNav ? "25px" : "12.5px")};
     -webkit-transform: translateX(5px);
     -moz-transform: translateX(5px);
     -ms-transform: translateX(5px);
@@ -115,9 +119,9 @@ export const LogoContainer = styled.div`
     left: 53%;
     color: #54b3d6;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size:  ${(props) => (props.isShowNav ? "0.8em" : "0.5em")};
     letter-spacing: 3px;
-    bottom: 10px;
+    bottom: ${(props) => (props.isShowNav ? "10px" : "5px")};
     opacity: 0;
     font-weight: 100;
     -webkit-transform: translateX(-50%);
@@ -132,12 +136,12 @@ export const LogoContainer = styled.div`
   .this .perspective {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    perspective: 150px;
+    perspective: ${(props) => (props.isShowNav ? "150px" : "75px")};
     position: absolute;
     left: 50%;
-    width: 80px;
-    height: 80px;
-    margin-left: -40px;
+    width:  ${(props) => (props.isShowNav ? "80px" : "40px")};
+    height:  ${(props) => (props.isShowNav ? "80px" : "40px")};
+    margin-left:  ${(props) => (props.isShowNav ? "-40px" : "-20px")};
     -webkit-transform-origin: center;
     -moz-transform-origin: center;
     -ms-transform-origin: center;
@@ -186,7 +190,7 @@ export const LogoContainer = styled.div`
     -ms-transform: translateX(0) rotateY(-126.87deg);
     -o-transform: translateX(0) rotateY(-126.87deg);
     transform: translateX(0) rotateY(-126.87deg);
-    border-left: 25px solid #7ba5c7;
+    border-left:  ${(props) => (props.isShowNav ? "25px solid #7ba5c7" : "12.5px solid #7ba5c7")};
   }
   .this:hover .text {
     opacity: 1;

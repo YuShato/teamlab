@@ -7,6 +7,6 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   grid-template-columns: 300px 250px 200px 100px;
   background-color: var(--white);
-  padding-left: 20px;
+  padding-left: 260px;
   padding-right: 20px;
 `;

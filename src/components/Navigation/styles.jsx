@@ -10,10 +10,39 @@ export const NavWrapper = styled.nav`
   grid-template-areas:
     "logo"
     "menu";
-  grid-template-rows: 80px 1fr;
-  width: 250px;
+  grid-template-rows: 100px 1fr;
+  width:  ${(props) => (props.isShowNav ? "250px" : "80px")};
   background-color: var(--white);
   box-shadow: 6px 2px 15px 5px rgba(91,172,255,0.38);
+  animation-name: ${(props) => (props.isShowNav ? "slide-in-left" : "slide-in-right")};
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+  @keyframes slide-in-left {
+  0%{
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0%{
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 `;
 
 export const MenuContainer = styled.div`
@@ -27,3 +56,4 @@ export const MenuContainer = styled.div`
   align-items: center;
   align-content: start;
 `;
+

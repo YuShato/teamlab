@@ -1,7 +1,9 @@
+import { useState, useEffect } from "react";
 import { NavWrapper, MenuContainer } from "./styles";
 import Logo from "../Logo";
 import NavLinkItem from "../NavLinkItem";
 import PropTypes from "prop-types";
+import ToggleNavBtn from "../ToggleNavBtn";
 
 /**
  * Navigation component.
@@ -12,14 +14,26 @@ import PropTypes from "prop-types";
  */
 
 const Navigation = ({ navLinksDataArray }) => {
+
+    const [ showNav, setShowNav ] = useState(false);
+
+    const onToggleNav = () => {
+        setShowNav(!showNav);
+    };
+
+    useEffect(() => {
+
+    }, [ showNav ]);
+
     return (
-        <NavWrapper>
-            <Logo />
+        <NavWrapper isShowNav={showNav}>
+            <Logo isShowNav={showNav} />
             <MenuContainer>
                 {navLinksDataArray.map((link, index) => (
-                    <NavLinkItem key={index} linkInfo={link} />
+                    <NavLinkItem key={index} linkInfo={link} isTextShow={showNav} />
                 ))}
             </MenuContainer>
+            <ToggleNavBtn isNavOpen={showNav} onToggleNav={onToggleNav} />
         </NavWrapper>
     );
 };
